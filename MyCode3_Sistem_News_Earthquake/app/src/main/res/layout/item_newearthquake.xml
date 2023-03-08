@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/wilayah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/wilayah"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/magnitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wilayah"
+            android:layout_alignStart="@+id/wilayah"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/magnitude"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/kedalaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/magnitude"
+            android:layout_alignStart="@+id/magnitude"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/kedalaman"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/potensi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kedalaman"
+            android:layout_alignStart="@+id/kedalaman"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/potensi"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_wilayah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_magnitude"
+            android:layout_alignTop="@+id/wilayah"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="@android:color/darker_gray"
+            tools:text="Pusat gempa berada di darat 4 km barat laut Kota Jayapura" />
+
+        <TextView
+            android:id="@+id/tv_magnitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/magnitude"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/magnitude"
+            android:textColor="@android:color/darker_gray"
+            tools:text="2.7" />
+
+        <TextView
+            android:id="@+id/tv_kedalaman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_magnitude"
+            android:layout_alignTop="@+id/kedalaman"
+            android:textColor="@android:color/darker_gray"
+            tools:text="3 km" />
+
+        <TextView
+            android:id="@+id/tv_potensi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_kedalaman"
+            android:layout_alignStart="@+id/tv_magnitude"
+            android:layout_alignTop="@+id/potensi"
+            android:textColor="@android:color/darker_gray"
+            tools:text="Tidak berpotensi tsunami" />
+
+        <ImageView
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/potensi"
+            android:layout_alignStart="@+id/potensi"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/image_clock"
+            app:srcCompat="@drawable/clock" />
+
+        <TextView
+            android:id="@+id/tv_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/clock"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/clock"
+            android:textColor="@android:color/darker_gray"
+            tools:text="10:12:47 WIB" />
+
+        <ImageView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/clock"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/tv_clock"
+            android:contentDescription="@string/image_date"
+            app:srcCompat="@drawable/date" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/date"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/date"
+            android:textColor="@android:color/darker_gray"
+            tools:text="20 Feb 2023" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

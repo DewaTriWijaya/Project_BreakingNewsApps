@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyCode</string>
+
+    <string name="image_clock">Image clock</string>
+    <string name="image_date">Image Date</string>
+
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="splash1_txt1">Welcome To The Breaking News App</string>
+    <string name="splash2_txt1">This Application Provides The Latest News Information That is Happening. And Provide Reliable News Sources.</string>
+    <string name="splash3_txt1">This Application Provides The Latest Earthquake Information That is Happening. And Take Information From BMKG(Badan Meteorologi, Klimatologi, dan Geofisika) Sources.</string>
+
+    <string name="next">Next</string>
+    <string name="regis1">please those who dont have an account yet!</string>
+    <string name="registration">Registration</string>
+
+    <string name="login1">please those who already have an account!</string>
+
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_news">News</string>
+    <string name="title_earthquake">Earthquake</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="gempa_terkini">Gempa Terkini !</string>
+    <string name="dirasakan">Dirasakan</string>
+    <string name="wilayah">Wilayah</string>
+    <string name="magnitude">Magnitude</string>
+    <string name="kedalaman">Kedalaman</string>
+    <string name="potensi">Potensi</string>
+
+    <string name="daftar_gempabumi_m_5_0">Daftar Gempa Bumi M 5.0+</string>
+
+</resources>
